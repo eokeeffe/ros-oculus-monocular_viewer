@@ -9,6 +9,7 @@ This viewers is built to allow the usage of the configurable oculus rift viewer 
 published and subscibed to by the ROS message passing service
 
 RosBuild Install
+----------------
 to install clone the repo to your stack
 rospack profile && rosstack profile
 roscd ros-oculus-monocular_viewer
@@ -16,6 +17,7 @@ rosmake ros-oculus-monocular_viewer
 
 
 Catkin Install
+--------------
 Currently working on this
 
 To run the application to make sure it works 
@@ -25,7 +27,18 @@ rostopic pub /oculus/fpv/message std_msgs/String "Hello World"
 The message should show up on the viewer
 
 ROS Subscribers
-/oculus/fpv/image , publish to this channel to send the images to the headset
-/oculus/fpv/message , publish a string to print to the oculus rift screen
-                    /* Will be adding support later for printing to a specific height */
+---------------
+/*  publish to this channel to send the images to the headset */
+
+/oculus/fpv/image
+
+/*  publish a string to print to the oculus rift screen */
+
+/oculus/fpv/message
+
+Future Updates
+--------------
+  -Move to Catkin
+  -Support ROS Hydro
+  -Will be adding support later for printing to a specific height in the message subscriber
 
