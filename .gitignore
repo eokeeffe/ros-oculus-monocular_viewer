@@ -1,0 +1,15 @@
+# Stop these files being uploaded
+bin/*
+#Add this by themselves
+LibOVR/*
+#CommonSrc
+#src/*
+build/*         
+CMakeFiles/*       
+devel/*
+test_results/*
+catkin/*
+gtest/*
+catkin_generated/*
+lib/*
+

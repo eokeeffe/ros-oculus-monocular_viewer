@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /opt/ros/groovy/stacks/ros-oculus-monocular_viewer/devel/setup.sh
